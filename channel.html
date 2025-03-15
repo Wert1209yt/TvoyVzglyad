@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ТвойВзгляд - Канал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип ТвойВзгляд">
+        </div>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Поиск">
+            <button id="search-button">Поиск</button>
+        </div>
+        <div class="auth">
+            <button id="login-button">Войти</button>
+            <button id="register-button">Регистрация</button>
+        </div>
+    </header>
+    <div class="container">
+        <aside>
+            <ul>
+                <li data-page="home"><a href="#">Главная</a></li>
+                <li data-page="trending"><a href="#">Популярное</a></li>
+                <li data-page="subscriptions"><a href="#">Подписки</a></li>
+                <li data-page="history"><a href="#">История просмотров</a></li>
+                <li data-page="mychannel"><a href="#">Мой канал</a></li>
+                <li data-page="playlists"><a href="#">Плейлисты</a></li>
+                <li data-page="music"><a href="#">Музыка</a></li>
+                <li data-page="games"><a href="#">Игры</a></li>
+                <li data-page="news"><a href="#">Новости</a></li>
+                <li data-page="sports"><a href="#">Спорт</a></li>
+            </ul>
+        </aside>
+        <main id="channel-content">
+            <div id="channel-banner"></div>
+            <div id="channel-header"></div>
+            <div id="channel-tabs">
+                <button data-tab="home">Главная</button>
+                <button data-tab="videos">Видео</button>
+                <button data-tab="community">Сообщество</button>
+                <button data-tab="about">О канале</button>
+            </div>
+            <div id="channel-tab-content"></div>
+        </main>
+    </div>
+    <script src="invidious.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

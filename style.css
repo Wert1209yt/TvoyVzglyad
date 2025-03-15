@@ -1,0 +1,86 @@
+/* Стили в стиле YouTube 2013 года */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo img {
+    height: 40px; /* Размер вашего логотипа */
+}
+
+header .search {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+}
+
+header .search input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+}
+
+header .search button {
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+header .auth button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+aside {
+    width: 200px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    height: calc(100vh - 61px); /* Высота с учетом шапки */
+    overflow-y: auto;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    padding: 8px 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Добавьте остальные стили, чтобы соответствовать YouTube 2013 года */

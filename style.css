@@ -83,4 +83,18 @@ main {
     padding: 20px;
 }
 
+.video-player {
+    width: 853px;
+    height: 480px;
+    background-color: #000;
+}
+
+.video-info {
+    margin-top: 10px;
+}
+
+.video-comments {
+    margin-top: 20px;
+}
+
 /* Добавьте остальные стили, чтобы соответствовать YouTube 2013 года */

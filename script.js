@@ -1,6 +1,6 @@
 // Пример использования Invidious API
 async function searchVideos(query) {
-    const instance = 'https://invidious.namazso.eu'; // Выберите экземпляр Invidious
+    const instance = 'https://inv.nadeko.net'; // Выберите экземпляр Invidious
     const url = `${instance}/api/v1/search?q=${query}`;
     const response = await fetch(url);
     const data = await response.json();
@@ -9,7 +9,7 @@ async function searchVideos(query) {
 
 // Пример получения информации о видео
 async function getVideo(videoId) {
-    const instance = 'https://invidious.namazso.eu';
+    const instance = 'https://inv.nadeko.net';
     const url = `${instance}/api/v1/videos/${videoId}`;
     const response = await fetch(url);
     const data = await response.json();
@@ -18,7 +18,7 @@ async function getVideo(videoId) {
 
 // Пример получения трендов
 async function getTrending() {
-    const instance = 'https://invidious.namazso.eu';
+    const instance = 'https://inv.nadeko.net';
     const url = `${instance}/api/v1/trending`;
     const response = await fetch(url);
     const data = await response.json();
@@ -27,7 +27,7 @@ async function getTrending() {
 
 // Пример получения информации о канале
 async function getChannel(channelId) {
-    const instance = 'https://invidious.namazso.eu';
+    const instance = 'https://inv.nadeko.net';
     const url = `${instance}/api/v1/channels/${channelId}`;
     const response = await fetch(url);
     const data = await response.json();
@@ -36,7 +36,7 @@ async function getChannel(channelId) {
 
 // Пример получения видео канала
 async function getChannelVideos(channelId) {
-    const instance = 'https://invidious.namazso.eu';
+    const instance = 'https://inv.nadeko.net';
     const url = `${instance}/api/v1/channels/${channelId}/videos`;
     const response = await fetch(url);
     const data = await response.json();
